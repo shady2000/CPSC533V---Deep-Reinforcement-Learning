@@ -10,7 +10,7 @@ import numpy as np
 import torch.nn as nn
 
 
-BATCH_SIZE = 5
+BATCH_SIZE = 256
 GAMMA = 0.99
 EPS_EXPLORATION = 0.2
 TARGET_UPDATE = 10
