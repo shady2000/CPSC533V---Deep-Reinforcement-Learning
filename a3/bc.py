@@ -15,12 +15,12 @@ TEST_INTERVAL = 2
 ENV_NAME = 'CartPole-v0'
 
 dataset = Dataset(data_path="D:/Machine Learning/FPT AI Residency/CPSC533V_2021W1/a3/{}_dataset.pkl".format(ENV_NAME))
-data_loader = torch.utils.data.DataLoader(dataset, batch_size=BATCH_SIZE, num_workers=4)
+data_loader = torch.utils.data.DataLoader(dataset, batch_size=BATCH_SIZE, num_workers=1)
 
 env = gym.make(ENV_NAME)
 
 # TODO INITIALIZE YOUR MODEL HERE
-model = MyModel(4, 2)
+model = MyModel(4, 2).to(device)
 
 
 def train_behavioral_cloning():
@@ -36,7 +36,7 @@ def train_behavioral_cloning():
             # data loader: contains data. data.items() --> dictionary
             data = {k: v.to(device) for k, v in data.items()}
 
-            output = model(data['state'])
+            output = model(data['state']).to(device)
 
             loss = loss_function(output, data["action"])
 
