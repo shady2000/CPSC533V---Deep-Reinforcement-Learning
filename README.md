@@ -8,3 +8,5 @@ My implementations for DRL algorithms
 A2: Tabular Q-Learning, Double Q-Learning 
 
 A3: Behavioral Cloning, DQN, DDQN
+
+A4: Vanilla Policy Gradient and Proximal Policy Optimization (PPO)
