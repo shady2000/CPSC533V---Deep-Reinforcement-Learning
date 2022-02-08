@@ -1,5 +1,4 @@
-# CPSC533V
-Learning to move UBC graduate course 
+# CPSC533V - Learning to move
 
 Course website: https://www.cs.ubc.ca/~van/cpsc533V/index.html 
 
