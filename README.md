@@ -1,4 +1,4 @@
-# CPSC533V - Learning to move
+# Deep RL
 
 Course website: https://www.cs.ubc.ca/~van/cpsc533V/index.html 
 
